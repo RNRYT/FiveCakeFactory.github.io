@@ -1,0 +1,118 @@
+/* Font faces */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+/* root */
+:root {
+  --background: rgb(90, 209, 110);
+  --background-secondary: rgb(202, 202, 202);
+  --green: #66cc6a;
+  --green-2: #59b65c;
+  --green-3: #1f550a;
+  --green-4: #345e30;
+  --black: rgb(39, 39, 39);
+  --black-1: rgb(19, 19, 19);
+  --black-2: rgb(75, 75, 75);
+  --background-2: rgba(65, 192, 53, 0.6);
+  --secondary: rgb(85, 85, 85);
+}
+
+/* scroll bar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary) transparent;
+}
+
+/*  Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--secondary);
+  border-radius: 20px;
+  border: 3px solid transparent;
+}
+
+/* body */
+
+body {
+  background: var(--background-secondary);
+}
+
+/* other */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: bold;
+  color: var(--black-2);
+}
+
+/* navbar */
+
+#navbar .bar {
+  margin-left: 2%;
+}
+
+#navbar a {
+  color: var(--black);
+}
+
+#navbar a:hover {
+  color: var(--green-2);
+}
+
+#navbar i {
+  font-size: 19px;
+}
+
+/* shop */
+
+#shop {
+  margin-top: 10%;
+}
+
+#shop h3:hover {
+  color: var(--green-3);
+}
+
+#shop img {
+  width: 300px;
+  border-radius: 10px;
+  margin-bottom: 3%;
+  margin-top: 3%;
+  transition: 0.2s;
+}
+
+#shop img:hover {
+  width: 310px;
+}
+
+#shop .image h5 {
+  margin-top: 2%;
+}
+
+#shop .image h5:hover {
+  color: var(--green-3);
+}
+/* footer */
+
+#footer {
+  margin-top: 10%;
+  background: var(--background-2);
+}
+
+#footer ul li a {
+  color: var(--black-1);
+}
